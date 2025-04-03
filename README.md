@@ -74,6 +74,4 @@ Visit: http://127.0.0.1:5050/health
 🧑‍💻 Author
 Wanshika Patro
 MS in Data Science | University at Buffalo
-🔗 LinkedIn
-🔗 GitHub
 
