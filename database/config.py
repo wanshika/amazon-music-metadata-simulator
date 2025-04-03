@@ -1,7 +1,13 @@
+import os
+import psycopg2
+import urllib.parse as urlparse
+
+url = urlparse.urlparse(os.environ['DATABASE_URL'])
+
 DB_CONFIG = {
-    'dbname': 'music_metadata',
-    'user': 'postgres',      # 👈 your actual PostgreSQL username
-    'password': '3006',  # 👈 your password
-    'host': 'localhost',
-    'port': 5432
+    'dbname': url.path[1:],
+    'user': url.username,
+    'password': url.password,
+    'host': url.hostname,
+    'port': url.port
 }
