@@ -4,11 +4,14 @@ import os
 
 app = Flask(__name__)
 
+@app.route('/', methods=['GET'])
+def home():
+    return jsonify({'message': 'Welcome to the Amazon Music Metadata API!'}), 200
+
 @app.route('/health', methods=['GET'])
 def health():
     return jsonify({'status': 'API is running 🚀'}), 200
 
-# Register blueprint AFTER simple routes
 app.register_blueprint(catalog_routes)
 
 if __name__ == '__main__':
