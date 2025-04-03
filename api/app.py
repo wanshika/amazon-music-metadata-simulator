@@ -2,8 +2,14 @@ from flask import Flask, jsonify
 from routes import catalog_routes
 import os
 
+print("✅ Flask app starting...")
+
+
 app = Flask(__name__)
 app.register_blueprint(catalog_routes)
+
+print("✅ Registering /health route...")
+
 
 @app.route('/health', methods=['GET'])
 def health():
