@@ -5,7 +5,7 @@ A backend system inspired by **Amazon Music's catalog architecture**, built to s
 ---
 
 ## 🚀 Live Demo  
-🌐 [https://your-app-name.onrender.com](#) ← *(Update once deployed)*
+[![Live on Render](https://img.shields.io/badge/Live-Render-success?style=flat-square&logo=render)](https://amazon-music-metadata-api.onrender.com)
 
 ---
 
