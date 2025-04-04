@@ -3,7 +3,7 @@ services:
     name: amazon-music-metadata-api
     runtime: python
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn api.app:app
+    startCommand: python app.py  # <--- FIXED PATH HERE
     envVars:
       - key: PORT
         value: 10000
