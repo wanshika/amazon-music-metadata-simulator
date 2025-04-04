@@ -72,6 +72,6 @@ python api/app.py
 Visit: http://127.0.0.1:5050/health
 
 🧑‍💻 Author
-Wanshika Patro
+Wanshika Patro and Nikhil Gokhale
 MS in Data Science | University at Buffalo
 
