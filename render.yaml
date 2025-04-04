@@ -1,12 +1,9 @@
 services:
   - type: web
-    name: music-metadata-api
-    env: python
-    plan: free
+    name: amazon-music-metadata-api
+    runtime: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python api/app.py
+    startCommand: gunicorn api.app:app
     envVars:
-      - key: DATABASE_URL
-        fromDatabase:
-          name: music_metadata_db
-          property: connectionString
+      - key: PORT
+        value: 10000
